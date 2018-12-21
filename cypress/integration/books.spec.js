@@ -23,15 +23,9 @@ describe("Manage Books page", () => {
 
   it("allows a book to be deleted", () => {
     cy.get('tbody').find('tr').should('have.length', 3)
-    cy.get(':nth-child(2) > :nth-child(9) > .fa').click()
+    cy.get(':nth-child(2) > :nth-child(8) > .fa').click()
     cy.get('button').contains('Delete').click()
     cy.get('tbody').find('tr').should('have.length', 2)
     cy.get('button').contains('OK').click()
-  });
-
-  it("allows a book to be upvoted", () => {
-    cy.get(':nth-child(1) > :nth-child(7) > .fa').click()
-    cy.get('.VueTables__upvotes-filter-wrapper > .form-control').type(1)
-    cy.get('tbody').find('tr').should('have.length', 1)
   });
 })

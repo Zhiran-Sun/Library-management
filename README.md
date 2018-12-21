@@ -7,6 +7,7 @@ Student No.:  20082252
 ## Overview.
 
 It is a website for the manager of a library system, mainly managing the books information and user list.
+It has two folders: Client and Server.
 
 ## Full description of Web App.
 ================================================================================
@@ -60,8 +61,8 @@ status:String}
 ##Video link:
 https://youtu.be/HPOGoZyhUyA
 
-##GIT:
-https://github.com/Zhiran-Sun/library-client
+##Github link:
+https://github.com/Zhiran-Sun/Library-management
 
 ## Extra features.
 

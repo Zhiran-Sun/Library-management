@@ -12,12 +12,10 @@ describe("Home page", () => {
   describe("Navigation bar", () => {
     it("Shows the required links", () => {
       cy.get(".navbar").contains('Home' );
-      cy.get(':nth-child(1) > :nth-child(1) > .nav-link > .fa').should('contain', 'Home');
-      cy.get(':nth-child(1) > :nth-child(2) > .nav-link > .fa').should('contain', 'Manage Books');
-      cy.get(':nth-child(1) > :nth-child(3) > .nav-link > .fa').should('contain', 'Add book');
-      cy.get(':nth-child(1) > :nth-child(4) > .nav-link > .fa').should('contain', 'Map');
-      cy.get('.ml-auto > :nth-child(1) > .nav-link > .fa').should('contain', 'About');
-      cy.get('.ml-auto > :nth-child(2) > .nav-link > .fa').should('contain', 'Contact');
+      cy.get(':nth-child(1) > :nth-child(1) > .nav-link > .fa').should('contain', 'Introduction');
+      cy.get(':nth-child(1) > :nth-child(2) > .nav-link > .fa').should('contain', 'Books List');
+      cy.get(':nth-child(1) > :nth-child(3) > .nav-link > .fa').should('contain', 'Edit books');
+      cy.get(':nth-child(1) > :nth-child(4) > .nav-link > .fa').should('contain', 'User List');
     });
 
     it("Redirects when links are clicked", () => {
